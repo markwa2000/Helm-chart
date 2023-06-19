@@ -1,0 +1,11 @@
+########## NEW VALUES ###########
+name: apache
+replicaset: 3
+image:
+  name: nginx:1.14.2
+containerport: 80
+service:
+  create: true
+  type: LoadBalancer
+  port: 80
+  targetport: 80

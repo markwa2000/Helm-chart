@@ -1,0 +1,11 @@
+########## NEW VALUES ###########
+name: apache
+replicaset: 1
+image:
+  name: httpd
+containerport: 80
+service:
+  create: false
+  type: LoadBalancer
+  port: 80
+  targetport: 80
